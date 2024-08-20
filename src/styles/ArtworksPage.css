@@ -1,0 +1,18 @@
+/* src/styles/ArtworksPage.css */
+.artworks-page {
+    padding: 20px;
+    background-color: rgb(163, 168, 168);
+  }
+  
+  .artworks-page h1 {
+    font-family: 'Futura', sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .artworks-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  

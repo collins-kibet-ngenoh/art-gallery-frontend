@@ -1,0 +1,180 @@
+/* src/styles/App.css */
+
+/* General Styles */
+body {
+  margin: 0;
+  font-family: 'Futura', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Futura', sans-serif;
+  margin: 0;
+}
+
+a {
+  color: #1d4ed8;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  background-color: #1d4ed8;
+  color: #fff;
+  font-family: 'Futura', sans-serif;
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: #1e40af;
+}
+
+/* Login and Register Forms */
+.login-form, .register-form {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #5c5b5b;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="text"]:focus {
+  border-color: #1d4ed8;
+  outline: none;
+}
+
+button.btn {
+  background-color: #1d4ed8;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button.btn:hover {
+  background-color: #1e40af;
+}
+
+/* Artworks Page */
+.artwork-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+  width: 300px; /* Set a fixed width */
+  max-width: 100%; /* Ensure it doesn't exceed its container width */
+  height: auto; /* Auto-adjust height based on content */
+}
+
+.artwork-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.artwork-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.artwork-card .artwork-info {
+  padding: 15px;
+}
+
+.artwork-card .artwork-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.artwork-card .artwork-description {
+  font-size: 1rem;
+  color: #666;
+}
+
+.artwork-card .artwork-price {
+  font-size: 1.125rem;
+  color: #1d4ed8;
+}
+
+/* Artwork Details Page */
+.artwork-details-page {
+  padding: 20px;
+}
+
+.artwork-header {
+  display: flex;
+  gap: 20px;
+}
+
+.artwork-image {
+  width: 100%;
+  height: auto;
+  max-width: 600px; /* Set a max-width to prevent the image from enlarging to full screen */
+  max-height: 400px; /* Optional: Set a max-height to maintain aspect ratio and size */
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.artwork-info {
+  max-width: 50%;
+}
+
+.artwork-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.artwork-description {
+  font-size: 1rem;
+  color: #666;
+  margin: 10px 0;
+}
+
+.artwork-price {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #1d4ed8;
+  margin-bottom: 10px;
+}
+
+.artwork-meta {
+  font-size: 0.875rem;
+  color: #999;
+}

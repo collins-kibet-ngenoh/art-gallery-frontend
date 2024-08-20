@@ -1,0 +1,162 @@
+/* src/styles/ArtistProfilePage.css */
+
+/* Ensure Futura font is used */
+@import url('https://fonts.googleapis.com/css2?family=Futura:wght@400;700&display=swap');
+
+.artist-profile-page {
+  font-family: 'Futura', sans-serif;
+  padding: 20px;
+  background-color: #e0d9d9;
+}
+
+.profile-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.profile-pic img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ddd;
+}
+
+.profile-details {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.profile-details h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.profile-details p {
+  font-size: 1rem;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+.logout-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  background-color: #e74c3c;
+  color: #fff;
+  cursor: pointer;
+  font-family: 'Futura', sans-serif;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  margin-bottom: 10px;
+  
+}
+
+.logout-button:hover {
+  background-color: #c0392b;
+}
+
+.follow-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  background-color: #0095f6;
+  color: #fff;
+  cursor: pointer;
+  font-family: 'Futura', sans-serif;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.follow-button.following {
+  background-color: #7f8c8d;
+}
+
+.follow-button.following:hover {
+  background-color: #95a5a6;
+}
+
+.follow-button:hover {
+  background-color: #007bb5;
+}
+
+.artworks-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.post-art-form {
+  margin-top: 20px;
+}
+
+.post-art-form h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.post-art-form form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.post-art-form input,
+.post-art-form textarea {
+  width: 100%;
+  max-width: 600px;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+}
+
+.post-art-form input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.post-art-form input[type="number"]::-webkit-inner-spin-button,
+.post-art-form input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.post-art-form .btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  background-color: #0095f6;
+  color: #fff;
+  cursor: pointer;
+  font-family: 'Futura', sans-serif;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.post-art-form .btn:hover {
+  background-color: #007bb5;
+}
+
+.error {
+  color: #e74c3c;
+  font-size: 0.875rem;
+}

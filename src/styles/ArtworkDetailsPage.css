@@ -1,0 +1,163 @@
+/* src/styles/ArtworkDetailsPage.css */
+
+/* Ensure Futura font is used */
+@import url('https://fonts.googleapis.com/css2?family=Futura:wght@400;700&display=swap');
+
+.artwork-details-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #d3d1d1;
+  padding: 20px;
+  min-height: 100vh;
+  font-family: 'Futura', sans-serif;
+  max-width: 400px; /* Set a max width to prevent enlargement */
+  width: 100%; /* Ensure card fits within its parent container */
+  margin: 0 auto; /* Center the card within its parent */
+}
+
+.artwork-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.artwork-image {
+  width: 100%;
+  max-width: 800px;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.artwork-info {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.artwork-title {
+  font-family: 'Futura', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.artwork-description {
+  font-family: 'Futura', sans-serif;
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.artwork-price {
+  font-family: 'Futura', sans-serif;
+  font-size: 1.5rem;
+  color: #e74c3c;
+  margin-bottom: 20px;
+}
+
+.artwork-meta {
+  font-family: 'Futura', sans-serif;
+  color: #999;
+  margin-bottom: 20px;
+}
+
+.artwork-artist {
+  margin-bottom: 20px;
+}
+
+.artwork-artist span {
+  font-family: 'Futura', sans-serif;
+  color: #333;
+  margin-right: 10px;
+}
+
+.artwork-actions {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.like-button, .view-artist-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  background-color: #0095f6;
+  color: #fff;
+  cursor: pointer;
+  font-family: 'Futura', sans-serif;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.like-button:hover, .view-artist-button:hover {
+  background-color: #007bb5;
+  
+}
+
+.comment-section {
+  width: 100%;
+  max-width: 800px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.comment-section textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  resize: vertical;
+  font-family: 'Futura', sans-serif;
+  margin-bottom: 10px;
+}
+
+.comment-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  background-color: #0095f6;
+  color: #fff;
+  cursor: pointer;
+  font-family: 'Futura', sans-serif;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.comment-button:hover {
+  background-color: #007bb5;
+}
+
+.comments-list {
+  width: 100%;
+  max-width: 800px;
+  margin-top: 20px;
+}
+
+.comment-item {
+  background-color: #fff;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.comment-item p {
+  font-family: 'Futura', sans-serif;
+  color: #333;
+}
+
+.comment-item strong {
+  color: #007bb5;
+}
